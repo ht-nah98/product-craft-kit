@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+.npm/
+.pnpm-store/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project-specific
+hrm-system/
+
+# Personal/temp data
+*.log
+*.tmp
+.env
+.env.local
+
+# Backup files
+*.bak
+*.backup
+
+# Large files
+*.zip
+*.tar.gz
+
+# Methodology source files (keep only knowledge/)
+/Ai agent building methodology.md
+/Product building methodology.md
