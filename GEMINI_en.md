@@ -40,6 +40,15 @@ If you know which project you're working on:
 
 ## Routing Table
 
+### 🔄 Meta System (Automatic - each prompt)
+
+| Skill | Purpose |
+|-------|---------|
+| `0_meta_system/SKILL_gap-detection.md` | Auto-check gaps after each prompt |
+| `0_meta_system/SKILL_lessons-learned.md` | Capture lessons |
+
+**Keywords**: "review system", "what's missing", "gap", "lesson"
+
 ### 📝 Documentation
 
 | User says | Skill |

@@ -40,6 +40,15 @@ Nếu biết project đang làm việc:
 
 ## Routing Table
 
+### 🔄 Meta System (Tự động - mỗi prompt)
+
+| Skill | Purpose |
+|-------|---------|
+| `0_meta_system/SKILL_gap-detection.md` | Auto-check gaps sau mỗi prompt |
+| `0_meta_system/SKILL_lessons-learned.md` | Ghi nhận lessons |
+
+**Keywords**: "review system", "what's missing", "gap", "lesson"
+
 ### 📝 Documentation (Viết tài liệu)
 
 | User nói | Skill |

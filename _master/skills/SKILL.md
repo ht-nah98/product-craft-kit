@@ -14,6 +14,7 @@ description: Tự động nhận diện yêu cầu và route đến skill/templa
 ```
 _master/skills/
 ├── SKILL.md                    # ← Router này
+├── 0_meta_system/              # 🔄 System Evolution (tự cải tiến)
 ├── 1_documentation/            # Viết tài liệu PO truyền thống
 ├── 2_product_building/         # Product Building lifecycle
 └── 3_ai_agent/                 # AI Agent development
@@ -22,6 +23,19 @@ _master/skills/
 ---
 
 ## Routing Table
+
+### 🔄 0. Meta System Evolution (AUTO)
+
+> **Tự động trigger** sau mỗi prompt/project - không cần keywords
+
+| Skill | Purpose | Trigger |
+|-------|---------|---------|
+| `0_meta_system/SKILL_system-evolution.md` | Overview cơ chế tự cải tiến | Manual review |
+| `0_meta_system/SKILL_gap-detection.md` | Phát hiện gaps | Auto mỗi prompt |
+| `0_meta_system/SKILL_improvement-proposal.md` | Đề xuất cải tiến | Khi có gap |
+| `0_meta_system/SKILL_lessons-learned.md` | Ghi nhận bài học | End of project |
+
+**Keywords**: "review system", "what's missing", "improve", "lesson", "gap"
 
 ### 📝 1. Documentation Skills
 
