@@ -1,5 +1,7 @@
 # Product Building System - Agent Instructions
 
+> 🌐 **Language / Ngôn ngữ**: [English](GEMINI_en.md) | [Tiếng Việt](GEMINI.md)
+
 > **ĐÂY LÀ FILE QUAN TRỌNG NHẤT** - Antigravity sẽ đọc file này mỗi khi mở workspace
 
 ---

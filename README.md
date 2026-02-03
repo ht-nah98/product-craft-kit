@@ -1,8 +1,11 @@
-# Product Building System
+# Product Craft Kit
+
+> 🌐 **Language / Ngôn ngữ**: [English](README.md) | [Tiếng Việt](README_vi.md)
 
 > 🚀 A comprehensive methodology & documentation framework for building products - from Discovery to Scale
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Language](https://img.shields.io/badge/Language-EN%20%7C%20VI-blue.svg)](README_vi.md)
 
 ---
 
