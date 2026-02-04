@@ -23,7 +23,7 @@ description: Skill viết Product Requirements Document
 ## Cấu trúc PRD chuẩn
 
 ### 1. Template Location
-> **Template File**: [`_master/templates/01_business_docs/_template_prd.md`](../../templates/01_business_docs/_template_prd.md)
+> **Template File**: [`.agent/resources/templates/01_business_docs/_template_prd.md`](../../resources/templates/01_business_docs/_template_prd.md)
 
 ### 2. Cấu trúc PRD
 

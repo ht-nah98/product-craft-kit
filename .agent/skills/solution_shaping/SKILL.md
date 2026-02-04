@@ -21,7 +21,7 @@ Skill này hướng dẫn thực hiện Phase 3 "DEVELOP" - giai đoạn khám p
 
 ## Template Location
 
-> **Template File**: [_master/templates/06_product_building/_template_solution_shape.md](../../templates/06_product_building/_template_solution_shape.md)
+> **Template File**: [.agent/resources/templates/06_product_building/_template_solution_shape.md](../../resources/templates/06_product_building/_template_solution_shape.md)
 
 ---
 

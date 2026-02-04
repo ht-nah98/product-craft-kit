@@ -17,7 +17,7 @@ description: Skill quản lý Product Backlog
 
 ## Template Backlog File
 
-> **Template File**: [`_master/templates/04_plans_docs/_template_backlog.md`](../../templates/04_plans_docs/_template_backlog.md)
+> **Template File**: [`.agent/resources/templates/04_plans_docs/_template_backlog.md`](../../resources/templates/04_plans_docs/_template_backlog.md)
 
 ### Backlog Structure
 

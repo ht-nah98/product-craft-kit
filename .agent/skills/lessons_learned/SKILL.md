@@ -123,7 +123,7 @@ Strong lessons should become:
 3. **Decision Frameworks** - Hướng dẫn quyết định
 4. **Templates** - Formats đã proven
 
-Location: `_master/knowledge/lessons/`
+Location: `.agent/resources/knowledge/lessons/`
 
 ---
 
@@ -149,7 +149,7 @@ ACTION: Add bulk operation pattern to Epic template
 ## Output Location
 
 Lessons stored at:
-`_master/system_evolution/lessons/LESSON-[YYYY-MM-DD]-[name].md`
+`.agent/resources/system_evolution/lessons/LESSON-[YYYY-MM-DD]-[name].md`
 
 ---
 

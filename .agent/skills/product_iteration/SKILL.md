@@ -21,7 +21,7 @@ Skill này hướng dẫn thực hiện Phase 5 "SCALE" - giai đoạn iterate b
 
 ## Template Location
 
-> **Template File**: [_master/templates/06_product_building/_template_iteration_plan.md](../../templates/06_product_building/_template_iteration_plan.md)
+> **Template File**: [.agent/resources/templates/06_product_building/_template_iteration_plan.md](../../resources/templates/06_product_building/_template_iteration_plan.md)
 
 ---
 

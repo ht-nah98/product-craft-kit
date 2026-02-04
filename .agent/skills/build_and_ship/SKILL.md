@@ -21,7 +21,7 @@ Skill này hướng dẫn thực hiện Phase 4 "DELIVER" - giai đoạn build M
 
 ## Template Location
 
-> **Template File**: [_master/templates/06_product_building/_template_launch_checklist.md](../../templates/06_product_building/_template_launch_checklist.md)
+> **Template File**: [.agent/resources/templates/06_product_building/_template_launch_checklist.md](../../resources/templates/06_product_building/_template_launch_checklist.md)
 
 ---
 

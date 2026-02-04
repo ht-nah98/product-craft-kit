@@ -21,7 +21,7 @@ Skill này hướng dẫn thực hiện Phase 2 của AI Agent development - Arc
 
 ## Template Location
 
-> **Template File**: [_master/templates/07_ai_agent/_template_agent_architecture.md](../../templates/07_ai_agent/_template_agent_architecture.md)
+> **Template File**: [.agent/resources/templates/07_ai_agent/_template_agent_architecture.md](../../resources/templates/07_ai_agent/_template_agent_architecture.md)
 
 ---
 

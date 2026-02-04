@@ -21,7 +21,7 @@ Skill này hướng dẫn thực hiện Phase 1 của AI Agent development - Dis
 
 ## Template Location
 
-> **Template File**: [_master/templates/07_ai_agent/_template_agent_problem.md](../../templates/07_ai_agent/_template_agent_problem.md)
+> **Template File**: [.agent/resources/templates/07_ai_agent/_template_agent_problem.md](../../resources/templates/07_ai_agent/_template_agent_problem.md)
 
 ---
 

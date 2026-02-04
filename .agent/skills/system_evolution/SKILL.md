@@ -18,9 +18,9 @@ Skill này tạo ra một **"Meta-Agent"** có khả năng:
 ## Template Location
 
 > **Templates**:
-> - [Gap Analysis](../../templates/00_meta_system/_template_gap_analysis.md)
-> - [Lessons Learned](../../templates/00_meta_system/_template_lessons_learned.md)
-> - [Improvement Proposal](../../templates/00_meta_system/_template_improvement_proposal.md)
+> - [Gap Analysis](../../resources/templates/00_meta_system/_template_gap_analysis.md)
+> - [Lessons Learned](../../resources/templates/00_meta_system/_template_lessons_learned.md)
+> - [Improvement Proposal](../../resources/templates/00_meta_system/_template_improvement_proposal.md)
 
 ---
 
@@ -174,7 +174,7 @@ Tạo Improvement Proposal → Get approval → Implement → Document in Lesson
 ## Output Location
 
 ```
-_master/
+.agent/resources/
 ├── system_evolution/
 │   ├── gaps/               # Gap analysis records
 │   ├── improvements/       # Improvement proposals
@@ -209,6 +209,6 @@ Khi làm việc với bất kỳ project nào:
 ## Next Steps
 
 Sau khi sử dụng skill này:
-- Gaps được document tại `_master/system_evolution/gaps/`
-- Improvements được track tại `_master/system_evolution/improvements/`
-- Lessons được aggregate tại `_master/system_evolution/lessons/`
+- Gaps được document tại `.agent/resources/system_evolution/gaps/`
+- Improvements được track tại `.agent/resources/system_evolution/improvements/`
+- Lessons được aggregate tại `.agent/resources/system_evolution/lessons/`

@@ -103,7 +103,7 @@ Khi phát hiện gap, note nhanh:
 ## Output
 
 Gaps được log tại:
-`_master/system_evolution/gaps/GAP-[YYYY-MM-DD]-[short-name].md`
+`.agent/resources/system_evolution/gaps/GAP-[YYYY-MM-DD]-[short-name].md`
 
 ---
 

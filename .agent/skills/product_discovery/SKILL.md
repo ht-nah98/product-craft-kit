@@ -21,7 +21,7 @@ Skill này hướng dẫn thực hiện Phase 1 "DISCOVER" - giai đoạn nghiê
 
 ## Template Location
 
-> **Template File**: [_master/templates/06_product_building/_template_discovery.md](../../templates/06_product_building/_template_discovery.md)
+> **Template File**: [.agent/resources/templates/06_product_building/_template_discovery.md](../../resources/templates/06_product_building/_template_discovery.md)
 
 ---
 

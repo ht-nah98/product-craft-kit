@@ -20,9 +20,9 @@ Bạn là AI assistant hỗ trợ:
 ### 1. Luôn đọc SKILL.md trước
 
 Khi user yêu cầu bất kỳ việc gì:
-1. **ĐẦU TIÊN** đọc `_master/skills/SKILL.md` để xác định loại công việc
-2. **SAU ĐÓ** đọc skill tương ứng trong subfolder
-3. **TUÂN THỦ 100%** template được reference trong skill
+1. **ĐẦU TIÊN** Antigravity sẽ tự động scan `.agent/skills` để tìm skill phù hợp dựa trên `description`.
+2. **SAU ĐÓ** đọc `SKILL.md` trong folder skill tương ứng.
+3. **TUÂN THỦ 100%** template được reference trong skill.
 
 ### 2. Luôn đọc project context
 
@@ -33,7 +33,7 @@ Nếu biết project đang làm việc:
 
 ### 3. Không tự bịa format
 
-- **PHẢI** dùng template trong `_master/templates/`
+- **PHẢI** dùng template trong `.agent/resources/templates/`
 - Nếu không có template → hỏi user
 
 ---
@@ -44,38 +44,38 @@ Nếu biết project đang làm việc:
 
 | Skill | Purpose |
 |-------|---------|
-| `0_meta_system/SKILL_gap-detection.md` | Auto-check gaps sau mỗi prompt |
-| `0_meta_system/SKILL_lessons-learned.md` | Ghi nhận lessons |
+| `gap_detection` | Auto-check gaps sau mỗi prompt |
+| `lessons_learned` | Ghi nhận lessons |
 
 **Keywords**: "review system", "what's missing", "gap", "lesson"
 
 ### 📝 Documentation (Viết tài liệu)
 
-| User nói | Skill |
+| User nói | Skill Folder |
 |----------|-------|
-| "user story", "story" | `1_documentation/SKILL_write-user-story.md` |
-| "epic", "nhóm tính năng" | `1_documentation/SKILL_write-epic.md` |
-| "PRD", "product requirement" | `1_documentation/SKILL_write-prd.md` |
-| "AC", "acceptance criteria" | `1_documentation/SKILL_write-acceptance-criteria.md` |
-| "backlog" | `1_documentation/SKILL_backlog-management.md` |
+| "user story", "story" | `write_user_story` |
+| "epic", "nhóm tính năng" | `write_epic` |
+| "PRD", "product requirement" | `write_prd` |
+| "AC", "acceptance criteria" | `write_acceptance_criteria` |
+| "backlog" | `backlog_management` |
 
 ### 🚀 Product Building (Xây sản phẩm)
 
-| User nói | Skill | Phase |
+| User nói | Skill Folder | Phase |
 |----------|-------|-------|
-| "discovery", "research" | `2_product_building/SKILL_discovery.md` | 1 |
-| "problem", "define" | `2_product_building/SKILL_problem-definition.md` | 2 |
-| "solution", "shape" | `2_product_building/SKILL_solution-shaping.md` | 3 |
-| "build", "ship", "launch" | `2_product_building/SKILL_build-and-ship.md` | 4 |
-| "iterate", "scale" | `2_product_building/SKILL_iteration.md` | 5 |
+| "discovery", "research" | `product_discovery` | 1 |
+| "problem", "define" | `problem_definition` | 2 |
+| "solution", "shape" | `solution_shaping` | 3 |
+| "build", "ship", "launch" | `build_and_ship` | 4 |
+| "iterate", "scale" | `product_iteration` | 5 |
 
 ### 🤖 AI Agent (Xây AI Agent)
 
-| User nói | Skill | Phase |
+| User nói | Skill Folder | Phase |
 |----------|-------|-------|
-| "ai agent", "agent" | `3_ai_agent/SKILL_agent-discovery.md` | 1 |
-| "architecture", "pattern" | `3_ai_agent/SKILL_agent-architecture.md` | 2 |
-| "pattern details" | `3_ai_agent/SKILL_agent-patterns.md` | Ref |
+| "ai agent", "agent" | `agent_discovery` | 1 |
+| "architecture", "pattern" | `agent_architecture` | 2 |
+| "pattern details" | `agent_patterns` | Ref |
 
 ---
 
@@ -96,14 +96,11 @@ Nếu biết project đang làm việc:
 ```
 /home/user/Desktop/PO-WriteDoc/
 ├── GEMINI.md                   # ← File này
-├── _master/
-│   ├── skills/
-│   │   ├── SKILL.md            # ← Router (đọc đầu tiên)
-│   │   ├── 1_documentation/    # Doc skills
-│   │   ├── 2_product_building/ # Product skills
-│   │   └── 3_ai_agent/         # AI Agent skills
-│   ├── templates/              # Templates
-│   └── knowledge/              # Methodology docs
+├── .agent/
+│   ├── skills/                 # Atomic Skills Folders
+│   ├── resources/
+│   │   └── templates/          # Templates
+│   ├── workflows/              # Workflows
 └── projects/[project-name]/    # Projects
 ```
 

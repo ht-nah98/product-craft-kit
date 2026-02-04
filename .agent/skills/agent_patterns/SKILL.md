@@ -13,7 +13,7 @@
 
 ## Template Location
 
-> **Template File**: [_master/templates/07_ai_agent/_template_agent_component.md](../../templates/07_ai_agent/_template_agent_component.md)
+> **Template File**: [.agent/resources/templates/07_ai_agent/_template_agent_component.md](../../resources/templates/07_ai_agent/_template_agent_component.md)
 
 ---
 

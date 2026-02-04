@@ -152,7 +152,7 @@ print('\n'.join([p.text for p in doc.paragraphs]))
 
 ## Templates liên quan
 
-- [`_template_module.md`](../../templates/01_business_docs/_template_module.md)
-- [`_template_epic.md`](../../templates/02_features_docs/_template_epic.md)
-- [`_template_user_story.md`](../../templates/02_features_docs/_template_user_story.md)
-- [`_template_hdsd.md`](../../templates/01_business_docs/_template_hdsd.md)
+- [`_template_module.md`](../../resources/templates/01_business_docs/_template_module.md)
+- [`_template_epic.md`](../../resources/templates/02_features_docs/_template_epic.md)
+- [`_template_user_story.md`](../../resources/templates/02_features_docs/_template_user_story.md)
+- [`_template_hdsd.md`](../../resources/templates/01_business_docs/_template_hdsd.md)

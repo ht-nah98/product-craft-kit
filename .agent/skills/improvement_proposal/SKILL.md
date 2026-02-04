@@ -148,7 +148,7 @@ Khi tạo NEW skill:
 ## Output Location
 
 Improvement proposals stored at:
-`_master/system_evolution/improvements/IMP-[YYYY-MM-DD]-[name].md`
+`.agent/resources/system_evolution/improvements/IMP-[YYYY-MM-DD]-[name].md`
 
 ---
 

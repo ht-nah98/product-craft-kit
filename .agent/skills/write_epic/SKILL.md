@@ -32,7 +32,7 @@ Module (Nhóm tính năng lớn - VD: Quản lý Nhân sự Gốc)
 ## Template Epic Specification
 
 ### 1. Template Location
-> **Template File**: [`_master/templates/02_features_docs/_template_epic.md`](../../templates/02_features_docs/_template_epic.md)
+> **Template File**: [`.agent/resources/templates/02_features_docs/_template_epic.md`](../../resources/templates/02_features_docs/_template_epic.md)
 
 ### 2. Cấu trúc Epic
 

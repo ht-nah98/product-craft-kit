@@ -21,7 +21,7 @@ Skill này hướng dẫn thực hiện Phase 2 "DEFINE" - giai đoạn chọn v
 
 ## Template Location
 
-> **Template File**: [_master/templates/06_product_building/_template_problem_canvas.md](../../templates/06_product_building/_template_problem_canvas.md)
+> **Template File**: [.agent/resources/templates/06_product_building/_template_problem_canvas.md](../../resources/templates/06_product_building/_template_problem_canvas.md)
 
 ---
 

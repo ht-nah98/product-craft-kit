@@ -21,7 +21,7 @@ description: Skill viết User Story theo chuẩn PO
 ## Template User Story
 
 ### 1. Template Location
-> **Template File**: [`_master/templates/02_features_docs/_template_user_story.md`](../../templates/02_features_docs/_template_user_story.md)
+> **Template File**: [`.agent/resources/templates/02_features_docs/_template_user_story.md`](../../resources/templates/02_features_docs/_template_user_story.md)
 
 ### 6. **Definition of Done**: Checklist hoàn thành
 
