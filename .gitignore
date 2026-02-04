@@ -15,8 +15,8 @@ node_modules/
 Thumbs.db
 
 # Project-specific
-hrm-system/
-project-QLK/
+projects/hrm-system/
+projects/project-QLK/
 
 # Personal/temp data
 *.log
