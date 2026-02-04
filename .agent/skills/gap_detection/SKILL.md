@@ -1,3 +1,8 @@
+---
+name: Gap Detection
+description: Skill phát hiện và ghi nhận gaps trong hệ thống
+---
+
 # SKILL: Gap Detection
 ## Phát Hiện và Ghi Nhận Gaps trong Hệ Thống
 

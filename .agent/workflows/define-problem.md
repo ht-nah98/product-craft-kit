@@ -10,11 +10,11 @@ description: Define Problem phase - Chọn và định nghĩa vấn đề cần 
 
 ### 1. Đọc Skill
 // turbo
-Đọc file: `_master/skills/2_product_building/SKILL_problem-definition.md`
+Đọc file: `.agent/skills/problem_definition/SKILL.md`
 
 ### 2. Đọc Template
 // turbo
-Đọc file: `_master/templates/06_product_building/_template_problem_canvas.md`
+Đọc file: `.agent/resources/templates/06_product_building/_template_problem_canvas.md`
 
 ### 3. Đọc Discovery Results
 // turbo

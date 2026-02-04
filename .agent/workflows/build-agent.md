@@ -11,16 +11,16 @@ description: Build AI Agent - Workflow xây dựng AI Agent từ Discovery đế
 ### 1. Đọc Skills liên quan
 // turbo
 Đọc các files:
-- `_master/skills/3_ai_agent/SKILL_agent-discovery.md`
-- `_master/skills/3_ai_agent/SKILL_agent-architecture.md`
-- `_master/skills/3_ai_agent/SKILL_agent-patterns.md`
+- `.agent/skills/agent_discovery/SKILL.md`
+- `.agent/skills/agent_architecture/SKILL.md`
+- `.agent/skills/agent_patterns/SKILL.md`
 
 ### 2. Đọc Templates
 // turbo
 Đọc các templates:
-- `_master/templates/07_ai_agent/_template_agent_problem.md`
-- `_master/templates/07_ai_agent/_template_agent_architecture.md`
-- `_master/templates/07_ai_agent/_template_agent_component.md`
+- `.agent/resources/templates/07_ai_agent/_template_agent_problem.md`
+- `.agent/resources/templates/07_ai_agent/_template_agent_architecture.md`
+- `.agent/resources/templates/07_ai_agent/_template_agent_component.md`
 
 ### 3. Phase 1: Agent Discovery
 

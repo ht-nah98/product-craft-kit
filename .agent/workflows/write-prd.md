@@ -14,7 +14,7 @@ Khi user cần viết tài liệu yêu cầu sản phẩm/tính năng tổng qua
 
 ### 2. Đọc context
 Đọc các file:
-1. `_master/skills/SKILL_write-prd.md`
+1. `.agent/skills/write_prd/SKILL.md`
 2. `projects/[project]/project-context.md`
 3. Các PRD/Epics đã có (nếu có)
 

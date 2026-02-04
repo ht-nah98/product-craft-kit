@@ -1,3 +1,8 @@
+---
+name: Lessons Learned
+description: Skill ghi nhận và ứng dụng bài học từ dự án
+---
+
 # SKILL: Lessons Learned
 ## Ghi Nhận và Ứng Dụng Bài Học
 

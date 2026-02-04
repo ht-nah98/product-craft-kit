@@ -1,3 +1,8 @@
+---
+name: Product Discovery
+description: Skill thực hiện Discovery Phase - Research và tìm hiểu user
+---
+
 # SKILL: Discovery Phase
 ## Product Building Phase 1 - Understand the Problem Space
 

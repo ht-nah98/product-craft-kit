@@ -1,3 +1,8 @@
+---
+name: Problem Definition
+description: Skill định nghĩa và chọn vấn đề cần giải quyết - Phase 2
+---
+
 # SKILL: Problem Definition
 ## Product Building Phase 2 - Focus on the Right Problem
 

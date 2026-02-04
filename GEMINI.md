@@ -57,7 +57,9 @@ Nếu biết project đang làm việc:
 | "epic", "nhóm tính năng" | `write_epic` |
 | "PRD", "product requirement" | `write_prd` |
 | "AC", "acceptance criteria" | `write_acceptance_criteria` |
+| "DoD", "definition of done" | `write_dod` |
 | "backlog" | `backlog_management` |
+| "tech spec", "reverse code" | `reverse_doc_from_code` |
 
 ### 🚀 Product Building (Xây sản phẩm)
 
@@ -100,8 +102,12 @@ Nếu biết project đang làm việc:
 │   ├── skills/                 # Atomic Skills Folders
 │   ├── resources/
 │   │   └── templates/          # Templates
-│   ├── workflows/              # Workflows
+│   └── workflows/              # Workflows
 └── projects/[project-name]/    # Projects
+    └── docs/
+        ├── 01_product_requirements/   # User Stories, Epics (Business)
+        ├── 02_technical_specs/        # TP, API Specs, Schema (Tech)
+        └── ...
 ```
 
 ---

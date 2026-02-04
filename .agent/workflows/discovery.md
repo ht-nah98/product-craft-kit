@@ -10,11 +10,11 @@ description: Start Discovery phase cho sản phẩm mới - Research và tìm hi
 
 ### 1. Đọc Skill
 // turbo
-Đọc file: `_master/skills/2_product_building/SKILL_discovery.md`
+Đọc file: `.agent/skills/product_discovery/SKILL.md`
 
 ### 2. Đọc Template
 // turbo
-Đọc file: `_master/templates/06_product_building/_template_discovery.md`
+Đọc file: `.agent/resources/templates/06_product_building/_template_discovery.md`
 
 ### 3. Đọc Project Context (nếu có)
 Nếu user đã có project:

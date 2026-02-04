@@ -10,11 +10,11 @@ description: Pre-launch checklist - Kiểm tra trước khi ship sản phẩm
 
 ### 1. Đọc Skill
 // turbo
-Đọc file: `_master/skills/2_product_building/SKILL_build-and-ship.md`
+Đọc file: `.agent/skills/build_and_ship/SKILL.md`
 
 ### 2. Đọc Template
 // turbo
-Đọc file: `_master/templates/06_product_building/_template_launch_checklist.md`
+Đọc file: `.agent/resources/templates/06_product_building/_template_launch_checklist.md`
 
 ### 3. Prepare Checklist
 

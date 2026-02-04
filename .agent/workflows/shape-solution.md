@@ -10,11 +10,11 @@ description: Shape Solution phase - Explore và design giải pháp theo Shape U
 
 ### 1. Đọc Skill
 // turbo
-Đọc file: `_master/skills/2_product_building/SKILL_solution-shaping.md`
+Đọc file: `.agent/skills/solution_shaping/SKILL.md`
 
 ### 2. Đọc Template
 // turbo
-Đọc file: `_master/templates/06_product_building/_template_solution_shape.md`
+Đọc file: `.agent/resources/templates/06_product_building/_template_solution_shape.md`
 
 ### 3. Đọc Problem Canvas
 // turbo

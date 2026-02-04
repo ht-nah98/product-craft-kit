@@ -1,3 +1,8 @@
+---
+name: System Evolution
+description: Meta-Agent for Continuous Improvement - Tiến hóa hệ thống
+---
+
 # SKILL: System Evolution
 ## Meta-Agent for Continuous Improvement
 

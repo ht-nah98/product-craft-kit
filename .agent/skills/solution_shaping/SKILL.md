@@ -1,3 +1,8 @@
+---
+name: Solution Shaping
+description: Skill định hình giải pháp theo Shape Up methodology - Phase 3
+---
+
 # SKILL: Solution Shaping
 ## Product Building Phase 3 - Explore Solution Options
 

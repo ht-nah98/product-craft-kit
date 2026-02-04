@@ -1,3 +1,8 @@
+---
+name: Improvement Proposal
+description: Skill đề xuất và thực hiện cải tiến hệ thống
+---
+
 # SKILL: Improvement Proposal
 ## Đề Xuất và Thực Hiện Cải Tiến Hệ Thống
 

@@ -1,3 +1,8 @@
+---
+name: Product Iteration
+description: Skill iterate và scale sản phẩm - Phase 5
+---
+
 # SKILL: Iteration & Scale
 ## Product Building Phase 5 - Grow & Iterate
 

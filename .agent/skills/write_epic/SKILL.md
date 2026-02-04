@@ -13,7 +13,7 @@ description: Skill viết Epic Spec cho nhóm tính năng lớn
 
 1. **Đọc project context**: `projects/[project]/project-context.md`
 2. **Đọc glossary**: `projects/[project]/glossary.md`
-3. **Xem các Epic đã có** trong `projects/[project]/docs/2_features_docs/[module_name]/`
+3. **Xem các Epic đã có** trong `projects/[project]/docs/01_product_requirements/[module_name]/`
 
 ---
 
@@ -32,7 +32,7 @@ Module (Nhóm tính năng lớn - VD: Quản lý Nhân sự Gốc)
 ## Template Epic Specification
 
 ### 1. Template Location
-> **Template File**: [`.agent/resources/templates/02_features_docs/_template_epic.md`](../../resources/templates/02_features_docs/_template_epic.md)
+> **Template File**: [`.agent/resources/templates/01_product_requirements/_template_epic.md`](../../resources/templates/01_product_requirements/_template_epic.md)
 
 ### 2. Cấu trúc Epic
 
@@ -83,11 +83,11 @@ Ví dụ:
 ## Lưu file
 
 ```
-projects/[project]/docs/2_features_docs/[module_name]/EPIC-[PREFIX]-[NUMBER].md
+projects/[project]/docs/01_product_requirements/[module_name]/EPIC-[PREFIX]-[NUMBER].md
 ```
 
 > [!CAUTION]
-> Luôn đặt trong folder của module tương ứng. KHÔNG để file trực tiếp trong `2_features_docs/`.
+> Luôn đặt trong folder của module tương ứng. KHÔNG để file trực tiếp trong `01_product_requirements/`.
 
 ---
 

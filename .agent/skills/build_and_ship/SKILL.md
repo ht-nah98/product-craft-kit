@@ -1,3 +1,8 @@
+---
+name: Build and Ship
+description: Skill build MVP và ship to users - Phase 4
+---
+
 # SKILL: Build and Ship
 ## Product Building Phase 4 - Deliver & Learn
 

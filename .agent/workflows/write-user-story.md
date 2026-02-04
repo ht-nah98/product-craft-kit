@@ -15,7 +15,7 @@ Khi user yêu cầu viết User Story cho một tính năng.
 
 ### 2. Đọc context
 Đọc các file theo thứ tự:
-1. `_master/skills/SKILL_write-user-story.md`
+1. `.agent/skills/write_user_story/SKILL.md`
 2. `projects/[project]/project-context.md`
 3. `projects/[project]/glossary.md`
 4. Các User Story liên quan đã có (nếu có)
@@ -28,7 +28,7 @@ Khi user yêu cầu viết User Story cho một tính năng.
 
 ### 4. Viết User Story
 Tuân thủ 100% format trong template (được link trong skill):
-- Đúng ID convention: `US-[MODULE]-[NUMBER]`
+- Đúng ID convention: `US-[PREFIX]-[NUMBER]`
 - Đủ: As a / I want / So that
 - Có Acceptance Criteria
 - Có Story Points estimate
@@ -36,7 +36,7 @@ Tuân thủ 100% format trong template (được link trong skill):
 
 ### 5. Lưu file
 Lưu vào:
-- `projects/[project]/docs/2_features_docs/user-stories/[US-ID].md`
+- `projects/[project]/docs/01_product_requirements/[module_name]/[US-ID].md`
 
 ### 6. (Optional) Hỏi user có muốn viết thêm
 - Viết thêm AC chi tiết?

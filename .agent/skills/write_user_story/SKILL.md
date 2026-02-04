@@ -11,7 +11,7 @@ description: Skill viết User Story theo chuẩn PO
 
 ## Trước khi viết
 
-1. **Đọc Epic cha**: `projects/[project]/docs/2_features_docs/epics/EPIC-XXX.md`
+1. **Đọc Epic cha**: `projects/[project]/docs/01_product_requirements/epics/EPIC-XXX.md`
 2. **Đọc project context**: `projects/[project]/project-context.md`
 3. **Đọc glossary**: `projects/[project]/glossary.md`
 4. **Xem các User Story liên quan** đã có
@@ -21,7 +21,7 @@ description: Skill viết User Story theo chuẩn PO
 ## Template User Story
 
 ### 1. Template Location
-> **Template File**: [`.agent/resources/templates/02_features_docs/_template_user_story.md`](../../resources/templates/02_features_docs/_template_user_story.md)
+> **Template File**: [`.agent/resources/templates/01_product_requirements/_template_user_story.md`](../../resources/templates/01_product_requirements/_template_user_story.md)
 
 ### 6. **Definition of Done**: Checklist hoàn thành
 
@@ -85,11 +85,11 @@ Ví dụ:
 ## Lưu file
 
 ```
-projects/[project]/docs/2_features_docs/[module_name]/US-[PREFIX]-[NUMBER].md
+projects/[project]/docs/01_product_requirements/[module_name]/US-[PREFIX]-[NUMBER].md
 ```
 
 > [!CAUTION]
-> Luôn đặt trong folder của module tương ứng. KHÔNG để file trực tiếp trong `2_features_docs/`.
+> Luôn đặt trong folder của module tương ứng. KHÔNG để file trực tiếp trong `01_product_requirements/` (hoặc `2_features_docs` cũ).
 
 ---
 
