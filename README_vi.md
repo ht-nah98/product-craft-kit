@@ -16,7 +16,7 @@ Một hệ thống hoàn chỉnh cho:
 - **🚀 Xây dựng Sản phẩm** - Phương pháp 5 giai đoạn (Khám phá → Định nghĩa → Phát triển → Triển khai → Mở rộng)
 - **🤖 Phát triển AI Agent** - Patterns và kiến trúc để xây dựng AI agents
 
-Được thiết kế để hoạt động liền mạch với AI assistants (như Gemini/Claude) giúp Product Owners và builders làm việc hiệu quả.
+Được thiết kế để hoạt động liền mạch với AI assistants (như Gemini/Claude) theo chuẩn **Google Antigravity**.
 
 ---
 
@@ -35,28 +35,29 @@ Một hệ thống hoàn chỉnh cho:
 
 ### Cho Người dùng
 
-1. Duyệt `_master/skills/` để hiểu phương pháp luận
-2. Sử dụng templates trong `_master/templates/`
+1. Duyệt `.agent/skills/` để hiểu phương pháp luận (Lưu ý folder ẩn)
+2. Sử dụng templates trong `.agent/resources/templates/`
 3. Tạo projects trong folder `projects/`
 
 ---
 
-## Cấu trúc
+## Cấu trúc Mới (Antigravity Standard)
 
 ```
 .
 ├── GEMINI.md                   # Hướng dẫn cho AI (đọc đầu tiên)
-├── _master/
-│   ├── skills/
-│   │   ├── SKILL.md            # Router (điểm vào chính)
-│   │   ├── 1_documentation/    # Skills viết tài liệu PO
-│   │   ├── 2_product_building/ # Skills vòng đời sản phẩm
-│   │   └── 3_ai_agent/         # Skills xây dựng AI agent
-│   ├── templates/              # Templates tài liệu
-│   └── knowledge/              # Tài liệu tham khảo phương pháp
-├── projects/                   # Projects của bạn ở đây
-│   └── _project-template/      # Template cho project mới
-└── .agent/workflows/           # Định nghĩa slash commands
+├── .agent/                     # (Hidden) Core system
+│   ├── skills/                 # Atomic Skills (Mỗi skill là 1 folder)
+│   │   ├── write_user_story/   # Skill viết user story
+│   │   ├── product_discovery/  # Skill discovery
+│   │   └── ...
+│   ├── resources/              # Tài nguyên dùng chung
+│   │   ├── templates/          # Templates tài liệu
+│   │   ├── knowledge/          # Tài liệu tham khảo phương pháp
+│   │   └── system_evolution/   # Gaps & Lessons data
+│   └── workflows/              # Định nghĩa slash commands
+└── projects/                   # Projects của bạn ở đây
+    └── _project-template/      # Template cho project mới
 ```
 
 ---
@@ -66,27 +67,27 @@ Một hệ thống hoàn chỉnh cho:
 ### 📝 Documentation Skills (Viết tài liệu)
 | Skill | Mục đích |
 |-------|----------|
-| Write Epic | Đặc tả tính năng lớn |
-| Write User Story | Yêu cầu tính năng cá nhân |
-| Write PRD | Tài liệu Yêu cầu Sản phẩm |
-| Write AC | Tiêu chí Chấp nhận |
-| Backlog Management | Ưu tiên và lập kế hoạch |
+| `write_epic` | Đặc tả tính năng lớn |
+| `write_user_story` | Yêu cầu tính năng cá nhân |
+| `write_prd` | Tài liệu Yêu cầu Sản phẩm |
+| `write_acceptance_criteria` | Tiêu chí Chấp nhận |
+| `backlog_management` | Ưu tiên và lập kế hoạch |
 
 ### 🚀 Product Building Skills (5 Giai đoạn)
 | Giai đoạn | Skill | Đầu ra |
 |-----------|-------|--------|
-| 1. Khám phá | Nghiên cứu & Insights | Kết quả nghiên cứu |
-| 2. Định nghĩa | Định nghĩa Vấn đề | Problem canvas |
-| 3. Phát triển | Định hình Giải pháp | Giải pháp shaped |
-| 4. Triển khai | Build & Ship | Launch checklist |
-| 5. Mở rộng | Lặp lại | Kế hoạch iteration |
+| 1. Khám phá | `product_discovery` | Kết quả nghiên cứu |
+| 2. Định nghĩa | `problem_definition` | Problem canvas |
+| 3. Phát triển | `solution_shaping` | Giải pháp shaped |
+| 4. Triển khai | `build_and_ship` | Launch checklist |
+| 5. Mở rộng | `product_iteration` | Kế hoạch iteration |
 
 ### 🤖 AI Agent Skills
 | Skill | Mục đích |
 |-------|----------|
-| Agent Discovery | Xác nhận vấn đề, phân tích người dùng |
-| Agent Architecture | Chọn pattern, thiết kế components |
-| Agent Patterns | Tham khảo implementation |
+| `agent_discovery` | Xác nhận vấn đề, phân tích người dùng |
+| `agent_architecture` | Chọn pattern, thiết kế components |
+| `agent_patterns` | Tham khảo implementation |
 
 ---
 
@@ -147,4 +148,4 @@ MIT License - Xem file [LICENSE](LICENSE)
 
 ## Đóng góp
 
-Hoan nghênh đóng góp! Vui lòng đọc tài liệu methodology trong `_master/knowledge/` trước.
+Hoan nghênh đóng góp! Vui lòng đọc tài liệu methodology trong `.agent/resources/knowledge/` trước.

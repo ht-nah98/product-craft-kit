@@ -16,7 +16,7 @@ A complete system for:
 - **🚀 Product Building** - 5-phase methodology (Discover → Define → Develop → Deliver → Scale)
 - **🤖 AI Agent Development** - Patterns and architecture for building AI agents
 
-Designed to work seamlessly with AI assistants (like Gemini/Claude) to help Product Owners and builders work efficiently.
+Designed to work seamlessly with AI assistants (like Gemini/Claude) following **Google Antigravity** standards.
 
 ---
 
@@ -35,28 +35,29 @@ Designed to work seamlessly with AI assistants (like Gemini/Claude) to help Prod
 
 ### For Humans
 
-1. Browse `_master/skills/` to understand methodologies
-2. Use templates in `_master/templates/`
+1. Browse `.agent/skills/` to understand methodologies (Note: hidden folder)
+2. Use templates in `.agent/resources/templates/`
 3. Create projects in `projects/` folder
 
 ---
 
-## Structure
+## New Structure (Antigravity Standard)
 
 ```
 .
 ├── GEMINI.md                   # AI instructions (read first)
-├── _master/
-│   ├── skills/
-│   │   ├── SKILL.md            # Router (main entry)
-│   │   ├── 1_documentation/    # PO documentation skills
-│   │   ├── 2_product_building/ # Product lifecycle skills
-│   │   └── 3_ai_agent/         # AI agent building skills
-│   ├── templates/              # Document templates
-│   └── knowledge/              # Methodology references
-├── projects/                   # Your projects go here
-│   └── _project-template/      # Template for new projects
-└── .agent/workflows/           # Slash command definitions
+├── .agent/                     # (Hidden) Core system
+│   ├── skills/                 # Atomic Skills (One folder per skill)
+│   │   ├── write_user_story/   # User story skill
+│   │   ├── product_discovery/  # Discovery skill
+│   │   └── ...
+│   ├── resources/              # Shared resources
+│   │   ├── templates/          # Document templates
+│   │   ├── knowledge/          # Methodology references
+│   │   └── system_evolution/   # Gaps & Lessons data
+│   └── workflows/              # Slash command definitions
+└── projects/                   # Your projects go here
+    └── _project-template/      # Template for new projects
 ```
 
 ---
@@ -66,27 +67,27 @@ Designed to work seamlessly with AI assistants (like Gemini/Claude) to help Prod
 ### 📝 Documentation Skills
 | Skill | Purpose |
 |-------|---------|
-| Write Epic | Large feature specification |
-| Write User Story | Individual feature requirements |
-| Write PRD | Product Requirements Document |
-| Write AC | Acceptance Criteria |
-| Backlog Management | Priority and planning |
+| `write_epic` | Large feature specification |
+| `write_user_story` | Individual feature requirements |
+| `write_prd` | Product Requirements Document |
+| `write_acceptance_criteria` | Acceptance Criteria |
+| `backlog_management` | Priority and planning |
 
 ### 🚀 Product Building Skills (5 Phases)
 | Phase | Skill | Output |
 |-------|-------|--------|
-| 1. Discover | Research & Insights | Research findings |
-| 2. Define | Problem Definition | Problem canvas |
-| 3. Develop | Solution Shaping | Shaped solution |
-| 4. Deliver | Build & Ship | Launch checklist |
-| 5. Scale | Iteration | Iteration plan |
+| 1. Discover | `product_discovery` | Research findings |
+| 2. Define | `problem_definition` | Problem canvas |
+| 3. Develop | `solution_shaping` | Shaped solution |
+| 4. Deliver | `build_and_ship` | Launch checklist |
+| 5. Scale | `product_iteration` | Iteration plan |
 
 ### 🤖 AI Agent Skills
 | Skill | Purpose |
 |-------|---------|
-| Agent Discovery | Problem validation, user analysis |
-| Agent Architecture | Pattern selection, component design |
-| Agent Patterns | Implementation reference |
+| `agent_discovery` | Problem validation, user analysis |
+| `agent_architecture` | Pattern selection, component design |
+| `agent_patterns` | Implementation reference |
 
 ---
 
@@ -147,4 +148,4 @@ MIT License - See [LICENSE](LICENSE) file
 
 ## Contributing
 
-Contributions welcome! Please read the methodology docs in `_master/knowledge/` first.
+Contributions welcome! Please read the methodology docs in `.agent/resources/knowledge/` first.
