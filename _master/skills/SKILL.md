@@ -43,10 +43,17 @@ _master/skills/
 |---------|-------|----------|
 | "epic", "nhóm tính năng" | `1_documentation/SKILL_write-epic.md` | `_template_epic.md` |
 | "user story", "story", "US" | `1_documentation/SKILL_write-user-story.md` | `_template_user_story.md` |
+| "screen", "màn hình", "UI" | - | `02_features_docs/_template_screen.md` |
+| "module", "nghiệp vụ" | - | `01_business_docs/_template_module.md` |
+| "architecture", "kiến trúc" | - | `03_technical_docs/_template_architecture.md` |
+| "test strategy", "kiểm thử" | - | `05_testing_docs/_template_test_strategy.md` |
+| "phase", "triển khai" | - | `04_plans_docs/_template_phase.md` |
 | "AC", "acceptance criteria" | `1_documentation/SKILL_write-acceptance-criteria.md` | - |
 | "DoD", "definition of done" | `1_documentation/SKILL_write-dod.md` | - |
 | "PRD", "product requirement" | `1_documentation/SKILL_write-prd.md` | `_template_prd.md` |
 | "backlog", "prioritize" | `1_documentation/SKILL_backlog-management.md` | `_template_backlog.md` |
+| "reverse", "từ code", "HDSD" | `1_documentation/SKILL_reverse-doc-from-code.md` | `_template_hdsd.md` |
+
 
 ### 🚀 2. Product Building Skills
 
@@ -101,14 +108,17 @@ Nếu không rõ:
 
 ---
 
-## Cấu trúc Tài liệu (Documentation)
+## Cấu trúc Tài liệu (Documentation Hierarchy)
 
 ```
-Module (Nhóm tính năng lớn)
-└── Epic (Tính năng lớn, nhiều sprint)
-    └── User Story (Chức năng đơn lẻ, 1 sprint)
-        └── Acceptance Criteria (Tiêu chí)
+Module (Phân hệ nghiệp vụ)
+└── Feature Folder (Thư mục theo Module trong Feature/Tech Pillar)
+    └── Screen (Mô tả giao diện & logic tập trung)
+        └── User Story (Các scenario chi tiết - nếu cần tách nhỏ)
 ```
+
+> [!TIP]
+> Luôn tổ chức tài liệu theo **Module-First**. Tránh để hàng chục file trong một folder duy nhất.
 
 ## Product Building Lifecycle
 
@@ -138,24 +148,35 @@ Tôi cần làm rõ yêu cầu:
 ## File Locations
 
 ```
-/home/user/Desktop/PO-WriteDoc/
-├── _master/
-│   ├── skills/
-│   │   ├── SKILL.md                     # Router
-│   │   ├── 1_documentation/             # Doc skills
-│   │   ├── 2_product_building/          # Product skills
-│   │   └── 3_ai_agent/                  # AI Agent skills
-│   ├── templates/
-│   │   ├── 01_business_docs/
-│   │   ├── 02_features_docs/
-│   │   ├── 06_product_building/         # NEW
-│   │   └── 07_ai_agent/                 # NEW
-│   └── knowledge/                        # Methodology docs
+_master/
+├── skills/
+│   ├── SKILL.md                     # Router
+│   ├── 1_documentation/             # Doc skills
+│   ├── 2_product_building/          # Product skills
+│   └── 3_ai_agent/                  # AI Agent skills
+├── templates/
+│   ├── 00_ai_instructions.md        # AI hướng dẫn viết docs
+│   ├── 01_business_docs/            # Module, Overview, Glossary
+│   ├── 02_features_docs/            # Screen, Epic, User Story
+│   ├── 03_technical_docs/           # Architecture, Database
+│   ├── 04_plans_docs/               # Phase, Sub-phase
+│   ├── 05_testing_docs/             # Test Strategy, Guide
+│   ├── 06_product_building/         # Discovery, Problem, Solution
+│   └── 07_ai_agent/                 # Agent Architecture
+│   └── README.md                    # Hướng dẫn sử dụng templates
 │
-└── projects/[project-name]/
-    ├── project-context.md
-    ├── glossary.md
-    └── docs/
+└── knowledge/                        # Methodology docs
+
+projects/[project-name]/
+├── project-context.md
+├── glossary.md
+└── docs/
+    ├── 1_business_docs/            # Overview & Modules
+    ├── 2_features_docs/            # shared/ & [module_name]/ folders
+    │   └── [module_name]/          # Screens (SCR-) and Stories (US-)
+    ├── 3_technical_docs/           # architecture.md & [module_name]/
+    ├── 4_plans_docs/               # Roadmap & Phases
+    └── 5_testing_docs/             # Strategy & Guides
 ```
 
 ---

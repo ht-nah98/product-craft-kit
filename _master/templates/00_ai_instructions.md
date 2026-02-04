@@ -129,7 +129,11 @@ Luôn link giữa các tài liệu liên quan:
 | `shared/layouts/` | Bố cục dùng chung (header, sidebar, footer) |
 | `shared/components/` | UI components dùng chung |
 | `shared/patterns/` | Patterns thiết kế (validation, pagination, ...) |
-| `[module_name]/` | Màn hình của từng module |
+| `[module_name]/` | Folder chứa Screens/Stories theo từng module |
+
+**QUY TẮC BẮT BUỘC**:
+1. **Module subfolders**: Không để file trực tiếp trong `2_features_docs/`. Phải chia theo module tương ứng ở Pillar 1.
+2. **Screen-Centric**: Ưu tiên tạo file Screen (`SCR-[ID]_[Name].md`) làm tài liệu chính thay vì viết User Story rời rạc. Một Screen document mô tả toàn diện: Wireframe, Flow, Feature List, AI Logic and States.
 
 **Nội dung cần có**:
 - Wireframe (text-based hoặc diagram)
@@ -148,7 +152,10 @@ Luôn link giữa các tài liệu liên quan:
 |------|----------|
 | `architecture.md` | Kiến trúc tổng quan, stack công nghệ |
 | `shared/` | Tài liệu kỹ thuật dùng chung |
-| `[module_name]/` | Tài liệu kỹ thuật theo module |
+| `[module_name]/` | Tài liệu kỹ thuật chi tiết theo từng module |
+
+**QUY TẮC BẮT BUỘC**:
+1. **Module subfolders**: Tài liệu tech chi tiết (Database Schema cho module, API specs...) phải nằm trong folder của module đó.
 
 **Nội dung cần có**:
 - Stack công nghệ

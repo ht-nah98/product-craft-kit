@@ -23,14 +23,14 @@ description: Skill viết User Story theo chuẩn PO
 ### 1. Template Location
 > **Template File**: [`_master/templates/02_features_docs/_template_user_story.md`](../../templates/02_features_docs/_template_user_story.md)
 
-### 2. Cấu trúc User Story
+### 6. **Definition of Done**: Checklist hoàn thành
 
-1. **Information**: ID, Epic, Priority, Points
-2. **Statement**: As a / I want / So that (INVEST)
-3. **Context**: Pre-conditions, Business Rules
-4. **Acceptance Criteria**: Given / When / Then (Happy path + Edge cases)
-5. **UI/UX**: Design references
-6. **Definition of Done**: Checklist hoàn thành
+---
+
+## Screen vs User Story
+
+> [!IMPORTANT]
+> Đối với các tính năng có giao diện phức tạp, ưu tiên sử dụng template **Screen** (`SCR-`) thay vì User Story đơn lẻ. Một Screen sẽ bao hàm nhiều User Stories để giữ tính tập trung.
 
 
 ---
@@ -85,8 +85,11 @@ Ví dụ:
 ## Lưu file
 
 ```
-projects/[project]/docs/2_features_docs/user-stories/US-[PREFIX]-[NUMBER].md
+projects/[project]/docs/2_features_docs/[module_name]/US-[PREFIX]-[NUMBER].md
 ```
+
+> [!CAUTION]
+> Luôn đặt trong folder của module tương ứng. KHÔNG để file trực tiếp trong `2_features_docs/`.
 
 ---
 
