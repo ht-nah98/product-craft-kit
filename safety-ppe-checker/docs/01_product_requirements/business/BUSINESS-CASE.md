@@ -17,14 +17,6 @@ Tai nạn điện do thiếu PPE là một trong những nguyên nhân hàng đ�
 
 ### Chi phí của việc không tuân thủ PPE
 
-| Loại chi phí | Ước tính |
-|--------------|----------|
-| Chi phí y tế cho 1 ca bỏng điện nghiêm trọng | 50–500 triệu VNĐ |
-| Phạt vi phạm an toàn lao động (theo Nghị định 12/2022) | 30–75 triệu VNĐ/vi phạm |
-| Ngừng hoạt động sản xuất để điều tra | 1–5 ngày làm việc mất |
-| Chi phí kiện tụng, bồi thường | Biến động lớn |
-| Thiệt hại uy tín doanh nghiệp | Khó định lượng |
-
 ### Hạn chế của quy trình kiểm tra thủ công hiện tại
 
 ```
@@ -78,28 +70,6 @@ Lợi ích:
 
 ## 4. Phân tích ROI (Return on Investment)
 
-### Chi phí đầu tư (ước tính Phase 1 + Phase 2)
-
-| Hạng mục | Chi phí ước tính |
-|----------|-----------------|
-| Phát triển Phase 1 (Demo) | Thấp — nội bộ |
-| Thu thập và gán nhãn dữ liệu (Phase 2) | 20–50 triệu VNĐ |
-| Phát triển Phase 2 (Production) | 100–300 triệu VNĐ |
-| Hạ tầng server/camera | 50–150 triệu VNĐ |
-| Bảo trì hàng năm | 20–50 triệu VNĐ/năm |
-| **Tổng đầu tư (Year 1)** | **~200–550 triệu VNĐ** |
-
-### Lợi ích có thể định lượng
-
-| Lợi ích | Ước tính tiết kiệm/năm |
-|---------|----------------------|
-| Giảm 1 tai nạn điện nghiêm trọng/năm | 50–500 triệu VNĐ |
-| Tiết kiệm thời gian giám sát kiểm tra | 500–2000 giờ làm việc/năm |
-| Giảm phạt vi phạm an toàn lao động | 30–300 triệu VNĐ/năm |
-| **Tổng lợi ích ước tính/năm** | **>500 triệu VNĐ** |
-
-> **Payback period ước tính**: 6–18 tháng tùy quy mô triển khai.
-
 ---
 
 ## 5. Rủi ro và biện pháp giảm thiểu
@@ -134,13 +104,6 @@ Phase 3 — Scale (6–18 tháng)
 ---
 
 ## 7. Yêu cầu để tiến hành Phase 2
-
-Để có thể xây dựng hệ thống production chính xác cho môi trường thực tế của công ty, cần:
-
-1. **Phê duyệt thu thập dữ liệu**: Cho phép chụp ảnh nhân viên (có mặc PPE) tại các điểm làm việc thực
-2. **Cung cấp quy định PPE**: Danh sách cụ thể PPE bắt buộc theo từng loại công việc
-3. **Truy cập hạ tầng camera**: Nếu muốn real-time monitoring (Phase 3)
-4. **Ngân sách**: ~200–550 triệu VNĐ cho toàn bộ Phase 2
 
 ---
 
