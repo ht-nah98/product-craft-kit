@@ -73,7 +73,7 @@
 |----------|-----|----------|--------|
 | [US-CV-001](./US-CV-001.md) | Detect PPE items từ ảnh upload | Must Have | 5 |
 | [US-CV-002](./US-CV-002.md) | Tạo compliance report (PASS/FAIL) | Must Have | 3 |
-| [US-CV-003](./US-CV-003.md) | Trả về ảnh annotated | Must Have | 3 |
+| [US-CV-003](./US-CV-003.md) | Trả về ảnh annotated (base64) | Must Have | 3 |
 
 **Total: 11 points**
 

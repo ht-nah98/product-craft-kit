@@ -56,11 +56,12 @@ Demo thành công → stakeholders hiểu và tin tưởng vào khả năng củ
 | Story ID | Tên | Priority | Points |
 |----------|-----|----------|--------|
 | [US-WEB-001](./US-WEB-001.md) | Upload ảnh để kiểm tra | Must Have | 3 |
-| [US-WEB-002](./US-WEB-002.md) | Xem kết quả annotated image | Must Have | 3 |
-| [US-WEB-003](./US-WEB-003.md) | Xem PPE compliance checklist | Must Have | 2 |
+| [US-WEB-002](./US-WEB-002.md) | Xem ảnh annotated với bounding boxes | Must Have | 3 |
+| [US-WEB-003](./US-WEB-003.md) | Xem PPE compliance checklist + PASS/FAIL | Must Have | 2 |
 | [US-WEB-004](./US-WEB-004.md) | Sử dụng demo mode với ảnh mẫu | Must Have | 2 |
+| [US-WEB-005](./US-WEB-005.md) | Xem confidence score từng PPE item | Should Have | 1 |
 
-**Total: 10 points**
+**Total: 11 points**
 
 ---
 
