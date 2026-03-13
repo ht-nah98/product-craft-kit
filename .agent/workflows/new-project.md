@@ -5,7 +5,7 @@ description: Tạo project mới từ template - Copy cấu trúc chuẩn và kh
 # Workflow: Tạo Project Mới
 
 ## Khi nào dùng
-Khi PO cần bắt đầu quản lý tài liệu cho một dự án mới.
+Khi cần bắt đầu quản lý tài liệu cho một dự án mới.
 
 ## Steps
 
@@ -15,31 +15,49 @@ Thu thập từ user:
 - Mô tả ngắn gọn
 - Đối tượng người dùng chính
 - Business goals
+- Tech stack (nếu biết)
 - Constraints/limitations (nếu có)
 
 ### 2. Tạo folder structure
-// turbo
+Copy từ template:
 ```bash
-cp -r /home/user/Desktop/PO-WriteDoc/projects/_project-template /home/user/Desktop/PO-WriteDoc/projects/[project-name]
+cp -r projects/_project-template projects/[project-name]
 ```
 
-### 3. Cập nhật project-context.md
-Điền thông tin vào file:
+### 3. Cập nhật CLAUDE.md trong project
+Điền thông tin vào:
+- `projects/[project-name]/CLAUDE.md`
+
+Section cần update:
+- Project Overview (tên và mô tả)
+- Tech stack
+
+### 4. Cập nhật project-context.md
+Điền thông tin vào:
 - `projects/[project-name]/project-context.md`
 
-### 4. Tạo README.md
-Cập nhật file:
-- `projects/[project-name]/README.md`
+Sections cần điền:
+- Project name và description
+- Problem Statement
+- Business Goals
+- Success Metrics
+- Stakeholders
+- Primary Users
+- Product Scope (In/Out)
+- Tech Stack
+- Timeline
 
-### 5. (Optional) Tạo glossary ban đầu
-Nếu user cung cấp thuật ngữ, cập nhật:
+### 5. (Optional) Khởi tạo glossary
+Nếu user cung cấp thuật ngữ domain, cập nhật:
 - `projects/[project-name]/glossary.md`
 
-### 6. Xác nhận với user
-Thông báo project đã được tạo và hướng dẫn next steps:
-- Bắt đầu viết PRD
-- Hoặc thêm User Stories
+### 6. Xác nhận và hướng dẫn next steps
+Thông báo project đã được tạo, suggest next steps:
+- Viết PRD → dùng `/write-prd`
+- Bắt đầu Discovery → dùng `/discovery`
+- Viết Epic đầu tiên → dùng `/write-epic`
 
 ## Output
-- Folder project mới tại `/projects/[project-name]/`
-- Files đã được khởi tạo với thông tin cơ bản
+- Folder project mới tại `projects/[project-name]/`
+- `CLAUDE.md` đã được cập nhật
+- `project-context.md` đã được điền thông tin cơ bản

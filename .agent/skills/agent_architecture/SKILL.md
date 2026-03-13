@@ -1,3 +1,8 @@
+---
+name: AI Agent Architecture
+description: Skill thiết kế kiến trúc AI Agent - chọn pattern và design components
+---
+
 # SKILL: AI Agent Architecture
 ## AI Agent Building Phase 2 - Pattern Selection & Design
 

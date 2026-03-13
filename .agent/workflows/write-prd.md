@@ -5,7 +5,7 @@ description: Viết PRD (Product Requirements Document) theo chuẩn PO
 # Workflow: Viết PRD
 
 ## Khi nào dùng
-Khi user cần viết tài liệu yêu cầu sản phẩm/tính năng tổng quan.
+Khi cần viết tài liệu yêu cầu sản phẩm/tính năng tổng quan.
 
 ## Steps
 
@@ -37,13 +37,13 @@ Tuân thủ template được reference trong skill:
 
 ### 5. Lưu file
 Lưu vào:
-- `projects/[project]/docs/1_business_docs/prd/[prd-name].md`
+- `projects/[project]/docs/01_product_requirements/prd/[prd-name].md`
 
 ### 6. Suggest next steps
-- Break down thành Epics
-- Viết User Stories chi tiết
+- Break down thành Epics → dùng `/write-epic`
+- Viết User Stories chi tiết → dùng `/write-user-story`
 - Tạo Backlog
 
 ## Output
-- File PRD hoàn chỉnh
+- File PRD hoàn chỉnh tại `docs/01_product_requirements/prd/`
 - Ready cho stakeholder review

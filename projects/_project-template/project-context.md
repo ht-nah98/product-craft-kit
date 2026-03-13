@@ -105,9 +105,11 @@
 
 | Document | Path | Description |
 |----------|------|-------------|
-| PRD | [link](./docs/1_business_docs/prd/) | Product Requirements |
+| PRD | [link](./docs/01_product_requirements/prd/) | Product Requirements |
 | Backlog | [backlog.md](./backlog.md) | Current backlog |
-| Architecture | [link](./docs/3_technical_docs/) | Technical design |
+| Architecture | [link](./docs/02_technical_specs/) | Technical design |
+| Plans | [link](./docs/03_plans/) | Phase plans & roadmap |
+| Testing | [link](./docs/04_testing/) | Test strategy & guides |
 
 ---
 

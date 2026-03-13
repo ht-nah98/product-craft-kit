@@ -1,17 +1,15 @@
-# Product Building System - Agent Instructions
+# Product Building System — Agent Instructions
 
-> 🌐 **Language / Ngôn ngữ**: [English](GEMINI_en.md) | [Tiếng Việt](GEMINI.md)
-
-> **THIS IS THE MOST IMPORTANT FILE** - Antigravity reads this file when opening the workspace
+> **THIS IS THE MOST IMPORTANT FILE** — AI reads this file when opening the workspace.
 
 ---
 
 ## Your Role in this Workspace
 
 You are an AI assistant supporting:
-1. **Product Owner** - Writing and managing product documentation
-2. **Product Builder** - Building products following standard methodology
-3. **AI Agent Builder** - Designing and building AI Agents
+1. **Product Owner** — Writing and managing product documentation
+2. **Product Builder** — Building products following standard methodology
+3. **AI Agent Builder** — Designing and building AI Agents
 
 ---
 
@@ -20,8 +18,8 @@ You are an AI assistant supporting:
 ### 1. Always read SKILL.md first
 
 When user requests anything:
-1. **FIRST** read `_master/skills/SKILL.md` to identify the task type
-2. **THEN** read the corresponding skill in subfolder
+1. **FIRST** — identify task type using the Routing Table below
+2. **THEN** — read `.agent/skills/[skill_name]/SKILL.md`
 3. **FOLLOW 100%** the template referenced in the skill
 
 ### 2. Always read project context
@@ -29,83 +27,102 @@ When user requests anything:
 If you know which project you're working on:
 1. Read `projects/[project]/project-context.md`
 2. Read `projects/[project]/glossary.md`
-3. Reference existing documentation
+3. Reference existing documentation before creating new
 
 ### 3. Don't make up formats
 
-- **MUST** use templates in `_master/templates/`
+- **MUST** use templates in `.agent/resources/templates/`
 - If no template exists → ask user
 
 ---
 
 ## Routing Table
 
-### 🔄 Meta System (Automatic - each prompt)
+### Meta System (auto-trigger)
 
 | Skill | Purpose |
 |-------|---------|
-| `0_meta_system/SKILL_gap-detection.md` | Auto-check gaps after each prompt |
-| `0_meta_system/SKILL_lessons-learned.md` | Capture lessons |
+| `gap_detection` | Auto-check gaps after each prompt |
+| `lessons_learned` | Capture lessons |
+| `improvement_proposal` | Propose system improvements |
 
 **Keywords**: "review system", "what's missing", "gap", "lesson"
 
-### 📝 Documentation
+### Documentation
 
-| User says | Skill |
-|-----------|-------|
-| "user story", "story" | `1_documentation/SKILL_write-user-story.md` |
-| "epic", "feature group" | `1_documentation/SKILL_write-epic.md` |
-| "PRD", "product requirement" | `1_documentation/SKILL_write-prd.md` |
-| "AC", "acceptance criteria" | `1_documentation/SKILL_write-acceptance-criteria.md` |
-| "backlog" | `1_documentation/SKILL_backlog-management.md` |
+| User says | Skill Folder |
+|-----------|--------------|
+| "user story", "story" | `write_user_story` |
+| "epic", "feature group" | `write_epic` |
+| "PRD", "product requirement" | `write_prd` |
+| "AC", "acceptance criteria" | `write_acceptance_criteria` |
+| "DoD", "definition of done" | `write_dod` |
+| "backlog" | `backlog_management` |
+| "tech spec", "TP", "technical spec" | `write_tech_spec` |
+| "reverse doc", "doc from code" | `reverse_doc_from_code` |
 
-### 🚀 Product Building
-
-| User says | Skill | Phase |
-|-----------|-------|-------|
-| "discovery", "research" | `2_product_building/SKILL_discovery.md` | 1 |
-| "problem", "define" | `2_product_building/SKILL_problem-definition.md` | 2 |
-| "solution", "shape" | `2_product_building/SKILL_solution-shaping.md` | 3 |
-| "build", "ship", "launch" | `2_product_building/SKILL_build-and-ship.md` | 4 |
-| "iterate", "scale" | `2_product_building/SKILL_iteration.md` | 5 |
-
-### 🤖 AI Agent Building
+### Product Building
 
 | User says | Skill | Phase |
 |-----------|-------|-------|
-| "ai agent", "agent" | `3_ai_agent/SKILL_agent-discovery.md` | 1 |
-| "architecture", "pattern" | `3_ai_agent/SKILL_agent-architecture.md` | 2 |
-| "pattern details" | `3_ai_agent/SKILL_agent-patterns.md` | Ref |
+| "discovery", "research" | `product_discovery` | 1 |
+| "problem", "define" | `problem_definition` | 2 |
+| "solution", "shape" | `solution_shaping` | 3 |
+| "build", "ship", "launch" | `build_and_ship` | 4 |
+| "iterate", "scale" | `product_iteration` | 5 |
+
+### AI Agent Building
+
+| User says | Skill | Phase |
+|-----------|-------|-------|
+| "ai agent", "build agent" | `agent_discovery` | 1 |
+| "architecture", "pattern" | `agent_architecture` | 2 |
+| "pattern details" | `agent_patterns` | Ref |
 
 ---
 
 ## Available Workflows
 
-- `/new-project` - Create new project
-- `/write-prd` - Write PRD
-- `/write-user-story` - Write User Story
-- `/discovery` - Start Discovery phase
-- `/define-problem` - Define Problem phase
-- `/shape-solution` - Shape Solution phase
-- `/build-agent` - Build AI Agent
+| Command | Description |
+|---------|-------------|
+| `/new-project` | Create new project |
+| `/write-prd` | Write PRD |
+| `/write-user-story` | Write User Story |
+| `/write-epic` | Write Epic specification |
+| `/write-acceptance-criteria` | Write Acceptance Criteria |
+| `/write-dod` | Write Definition of Done |
+| `/discovery` | Start Discovery phase |
+| `/define-problem` | Define Problem phase |
+| `/shape-solution` | Shape Solution phase |
+| `/build-agent` | Build AI Agent |
+| `/launch-checklist` | Pre-launch checklist |
 
 ---
 
 ## Folder Structure
 
 ```
-/home/user/Desktop/PO-WriteDoc/
-├── GEMINI.md                   # ← This file (Vietnamese)
-├── GEMINI_en.md                # ← English version
-├── _master/
-│   ├── skills/
-│   │   ├── SKILL.md            # ← Router (read first)
-│   │   ├── 1_documentation/    # Doc skills
-│   │   ├── 2_product_building/ # Product skills
-│   │   └── 3_ai_agent/         # AI Agent skills
-│   ├── templates/              # Templates
-│   └── knowledge/              # Methodology docs
-└── projects/[project-name]/    # Projects
+.
+├── CLAUDE.md                    ← Auto-read by Claude Code
+├── GEMINI.md                    ← This file (Vietnamese)
+├── GEMINI_en.md                 ← English version
+├── .agent/
+│   ├── skills/                  ← Atomic skill folders
+│   ├── resources/
+│   │   ├── templates/           ← Document templates
+│   │   ├── knowledge/           ← Methodology docs
+│   │   └── system_evolution/    ← Gaps & lessons log
+│   └── workflows/               ← Slash command definitions
+└── projects/[project-name]/
+    ├── project-context.md
+    ├── glossary.md
+    ├── backlog.md
+    └── docs/
+        ├── 01_product_requirements/
+        ├── 02_technical_specs/
+        ├── 03_plans/
+        ├── 04_testing/
+        └── 05_ai_agent/
 ```
 
 ---
@@ -114,8 +131,8 @@ If you know which project you're working on:
 
 If unclear:
 ```
-"I need clarification:
+I need clarification:
 1. What do you want to do? (Write docs / Build product / Build AI Agent)
 2. For which project?
-3. Which phase/stage?"
+3. Which phase/stage?
 ```

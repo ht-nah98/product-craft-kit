@@ -59,7 +59,8 @@ Nếu biết project đang làm việc:
 | "AC", "acceptance criteria" | `write_acceptance_criteria` |
 | "DoD", "definition of done" | `write_dod` |
 | "backlog" | `backlog_management` |
-| "tech spec", "reverse code" | `reverse_doc_from_code` |
+| "tech spec", "TP", "technical spec" | `write_tech_spec` |
+| "reverse doc", "doc from code" | `reverse_doc_from_code` |
 
 ### 🚀 Product Building (Xây sản phẩm)
 
@@ -83,31 +84,45 @@ Nếu biết project đang làm việc:
 
 ## Workflows Available
 
-- `/new-project` - Tạo project mới
-- `/write-prd` - Viết PRD
-- `/write-user-story` - Viết User Story
-- `/discovery` - Start Discovery phase
-- `/define-problem` - Define Problem phase
-- `/shape-solution` - Shape Solution phase
-- `/build-agent` - Build AI Agent
+| Command | Mô tả |
+|---------|-------|
+| `/new-project` | Tạo project mới |
+| `/write-prd` | Viết PRD |
+| `/write-user-story` | Viết User Story |
+| `/write-epic` | Viết Epic specification |
+| `/write-acceptance-criteria` | Viết Acceptance Criteria |
+| `/write-dod` | Viết Definition of Done |
+| `/discovery` | Start Discovery phase |
+| `/define-problem` | Define Problem phase |
+| `/shape-solution` | Shape Solution phase |
+| `/build-agent` | Build AI Agent |
+| `/launch-checklist` | Pre-launch checklist |
 
 ---
 
 ## Folder Structure
 
 ```
-/home/user/Desktop/PO-WriteDoc/
-├── GEMINI.md                   # ← File này
+.
+├── CLAUDE.md                    # ← Auto-read bởi Claude Code
+├── GEMINI.md                    # ← File này
 ├── .agent/
-│   ├── skills/                 # Atomic Skills Folders
+│   ├── skills/                  # Atomic Skills Folders
 │   ├── resources/
-│   │   └── templates/          # Templates
-│   └── workflows/              # Workflows
-└── projects/[project-name]/    # Projects
+│   │   ├── templates/           # Templates
+│   │   ├── knowledge/           # Methodology docs
+│   │   └── system_evolution/    # Gaps & lessons log
+│   └── workflows/               # Workflows
+└── projects/[project-name]/
+    ├── project-context.md
+    ├── glossary.md
+    ├── backlog.md
     └── docs/
-        ├── 01_product_requirements/   # User Stories, Epics (Business)
-        ├── 02_technical_specs/        # TP, API Specs, Schema (Tech)
-        └── ...
+        ├── 01_product_requirements/   # PRD, Epics, User Stories, Screens
+        ├── 02_technical_specs/        # Architecture, DB Schema, Tech Specs
+        ├── 03_plans/                  # Backlog, Phase plans
+        ├── 04_testing/                # Test Strategy, Test Guides
+        └── 05_ai_agent/               # AI Agent docs (nếu applicable)
 ```
 
 ---

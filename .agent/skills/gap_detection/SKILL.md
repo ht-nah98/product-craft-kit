@@ -114,5 +114,5 @@ Gaps được log tại:
 
 ## Linked Skills
 
-- [SKILL_system-evolution.md](SKILL_system-evolution.md) - Overview
-- [SKILL_improvement-proposal.md](SKILL_improvement-proposal.md) - Sau khi có gap
+- [system_evolution](../system_evolution/SKILL.md) - Overview
+- [improvement_proposal](../improvement_proposal/SKILL.md) - Sau khi có gap
